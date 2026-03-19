@@ -271,6 +271,8 @@ const normalizeDefinition = (def: string): string => {
     .trim()
     .replace(/^sot-223-(\d+)(?=_|$)/i, "sot223_$1")
     .replace(/^to-220f-(\d+)(?=_|$)/i, "to220f_$1")
+    .replace(/^pdip(\d*)(?=_|$)/i, "dip$1")
+    .replace(/^spdip(\d*)(?=_|$)/i, "dip$1")
 }
 
 export const string = (def: string): Footprinter => {
